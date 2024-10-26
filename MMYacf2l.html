@@ -26,9 +26,17 @@
         
         #accueil {
             background-color: #e9ecef;
+            padding-top: 0;
+          padding-bottom: 0;
         }
+
+.carousel-inner {
+    margin-top: 0;
+}
+
         #association {
             background-color: #e9ecef;
+            padding: 60px 0;
         }
         
         #nous {
@@ -76,7 +84,27 @@
             font-size: 80px;
             text-shadow: 2px 2px 4px #000;
         }
+
+        .fixed-height-img {
+        height: 200px; 
+        object-fit: cover; 
+    }
+    .inner-section {
+        background-color: #e9ecef; /* Couleur grise spécifique */
+        max-width: 800px; /* Largeur maximale de la section rectangulaire */
+        margin: 0 auto; /* Centre la section horizontalement */
+        padding: 40px; /* Espacement intérieur */
+        border-radius: 8px;
+      }
+
+
     </style>
+
+
+
+
+
+
 </head>
 <body>
     <!-- NAVBAR -->
@@ -113,8 +141,8 @@
         </div>
     </section>
 
-    <section id="association"   class="section py-5">
-        <div class="container">
+    <section id="association"   class="section py-5" >
+        <div class="container inner-section">
             <h2 class="titre" style="color: #305894;">ACF2L : Notre association</h2>
             <p class="texte fs-5">
                 L'Aéro-Club de Frotey-les-Lure appelé sous le terme ACF2L a pour origine la fusion de l'Aéro-Club de l'Ill siégeant à Vesoul et de l'Aéro-Club Marin-La-Meslée, siégeant à Frotey-les-Lure, au sein de l'Association des Aéro-Clubs de la Bourgogne-Franche-Comté.
@@ -179,95 +207,105 @@
         <div class="container">
             <h2 style="color: #305894;">Catégories d'ULM</h2>
             <p>Les catégories d'ULM proposées par notre aéro-club sont :</p>
-            <ul>
-                <li>Le paramoteur</li>
-                <li>Le pendulaire</li>
-                <li>Le multiaxes</li>
-                <li>L'hélicoptère ultraléger</li>
-                <li>L'aérostat ultraléger</li>
-                <li>L'autogire ultraléger</li>
-            </ul>
+            <br>
+              <div class="row">
+                <!-- Première ligne de trois images -->
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/paramoteur.jpeg" class="img-fluid" alt="Paramoteur">
+                  <p>Paramoteur</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/pendulaire.jpeg" class="img-fluid" alt="Pendulaire">
+                  <p>Pendulaire</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/Multiaxes.jpeg" class="img-fluid" alt="Multiaxes">
+                  <p>Multiaxes</p>
+                </div>
+              </div>
+              
+              <div class="row">
+                <!-- Deuxième ligne de trois images -->
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/Hélicoptère ultraléger.png" class="img-fluid" alt="Hélicoptère ultraléger">
+                  <p>Hélicoptère ultraléger</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/Aérostat ultraléger.jpeg" class="img-fluid" alt="Aérostat ultraléger">
+                  <p>Aérostat ultraléger</p>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                  <img src="img/Autogire ultraléger.jpeg" class="img-fluid" alt="Autogire ultraléger">
+                  <p>Autogire ultraléger</p>
+                </div>
+              </div>
+            </div>
         </div>
     </section>
     
     <section id="tarif" class="tarif">
      <div>
-      <h2 style="color: #305894;">Nos Tarifs</h2>
-      <div class="container">
-        <div class="row">
-          <!-- Card 1 -->
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Water Color Painting</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Apply now</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
+    <h2 style="color: #305894;">Nos Tarifs</h2>
+              <div class="container">
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/course-1.jpg" class="card-img-top fixed-height-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Water Color Painting</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Apply now</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/course-2.jpg" class="card-img-top fixed-height-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paly House & Nursary</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Apply now</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/course-3.jpg" class="card-img-top fixed-height-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Primary Classes</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="#" class="card-link">Apply now</a>
+                                    <a href="#" class="card-link">Another link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-      
-          <!-- Card 2 -->
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Paly House & Nursary</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Apply now</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Card 3 -->
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Primary Classes</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-              </ul>
-              <div class="card-body">
-                <a href="#" class="card-link">Apply now</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-
-
-
-
-     </div>
-
-
-
-
-
-
-
-    </section>
+        </section>
 
 
 
@@ -275,17 +313,28 @@
     <section id="moyens" class="section">
         <div class="container">
             <h2>Moyens Pédagogiques</h2>
-            <img src="..." class="rounded float-end width: 200px" alt="...">
-            <p>Nous disposons des infrastructures suivantes pour assurer la formation de qualité :</p>
+           
+        <div class="row align-items-center">
+          <div class="col-md-4">
+              <img src="img/aerodrome.jpeg" class="img-fluid rounded" alt="Image">
+          </div>
+          <div class="col-md-8">
+            <p>Un aérodrome privé avec la possibilité d'un hébergement dans un environnement exceptionnel</p>
+            <p>Sur le site
+              nous disposons de :</p>
             <ul>
+              <li> Une surface totale de 45 hectares dégagés. </li>
                 <li>Deux pistes de 800m et 450m</li>
-                <li>Hydrosurface de 8 hectares</li>
+                <li>Trois hangars avec surface couverte de 4300 m².  </li>
+                <li>Locaux administratifs informatisés. </li>
                 <li>Salle de cours multimédia avec simulateur de vol</li>
-                <li>Atelier d'entretien et de réparation</li>
+                <li>Des capacités d'accueil et de restauration sur place. </li>
                 <li>Connexion WIFI sur toute la base</li>
             </ul>
         </div>
     </section>
+
+
 
     <!-- Section Galerie -->
     <section id="galerie" class="section">
@@ -301,8 +350,12 @@
                     <img src="img/avionciel.jpeg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="img/decolleavion.webp" class="d-block w-100" alt="...">
+                    <img src="img/cours-5.jpg" class="d-block w-100" alt="...">
                   </div>
+                  <div class="carousel-item">
+                    <img src="img/troisAutogires.jpg" class="d-block w-100" alt="...">
+                  </div>
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
