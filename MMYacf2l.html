@@ -101,19 +101,20 @@
             object-fit: cover;
         }
 
+
         h2 {
             text-align: center;
             margin-bottom: 40px;
         }
-
         .carousel-titre {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: rgb(0, 0, 0);
+            color: black;
             font-size: 200px;
-            text-shadow: 2px 2px 4px #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'BenchNine', sans-serif;
+            background: none;
+            padding: 0;
+            border: none;
+            box-shadow: none;
         }
 
         .fixed-height-img {
@@ -144,6 +145,19 @@
             height: 250px; 
             object-fit: cover;
         }
+        
+        /* image d'accueil fixe */
+        .background-fixed {
+            background-image: url('img/ciel.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
     </style>
 
 </head>
@@ -175,17 +189,11 @@
     </nav>
 
     <!-- Section Accueil -->
-    <section id="accueil" class="section">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/ciel.jpeg" alt="Image Accueil">
-                    <div class="carousel-titre police-accueil display-1">ACF2L</div>
-                </div>
-            </div>
-        </div>
+    <section id="accueil" class="section background-fixed">
+        <div class="carousel-titre">ACF2L</div>
     </section>
-
+    
+    <!-- section asoociation -->
     <section id="association" class="section py-5">
         <div class="container inner-section bg-grey">
             <h2 class="class= police-titre" style="color: #305894; ">ACF2L : Notre association</h2>
